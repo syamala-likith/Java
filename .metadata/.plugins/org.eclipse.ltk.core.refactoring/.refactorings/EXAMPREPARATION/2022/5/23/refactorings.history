@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;PREPARATION.SortById&apos; to &apos;SortByIdEmployee&apos;&#x0D;&#x0A;- Original project: &apos;EXAMPREPARATION&apos;&#x0D;&#x0A;- Original element: &apos;PREPARATION.SortById&apos;&#x0D;&#x0A;- Renamed element: &apos;PREPARATION.SortByIdEmployee&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SortById&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;PREPARATION{SortById.java[SortById" matchStrategy="1" name="SortByIdEmployee" qualified="false" references="true" similarDeclarations="false" stamp="1653824050791" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,29 @@
+package JAVA2;
+
+public class Loan 
+{
+	static long loanamount,year,roi;
+	public static void main(String[] args) 
+	{
+		new Loan();
+		display();
+	}
+	Loan()
+	{
+		this(10000,3);
+		loanamount=0;
+		year=0;
+		roi=0;
+	}
+	Loan(long loanamount,long year)
+	{
+		this.loanamount=loanamount;
+		this.year=year;
+	}
+	static void display()
+	{
+		System.out.println("Loan Amount:"+loanamount);
+		System.out.println("Year:"+year);
+		System.out.println("ROI:"+roi);
+	}
+}

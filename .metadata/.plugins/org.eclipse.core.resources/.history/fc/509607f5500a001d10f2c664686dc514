@@ -1,0 +1,6 @@
+package startage_pattern;
+
+public interface Sorting_Interface_Main
+{
+	int sort(int a[]);
+}

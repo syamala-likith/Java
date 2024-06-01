@@ -1,0 +1,6 @@
+package startage_pattern;
+
+public class Shell_Sort implements Sorting_Interface_Main
+{
+	
+}

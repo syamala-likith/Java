@@ -1,0 +1,60 @@
+package Exmple;
+
+import java.util.Scanner;
+
+public class terminalExpression implements Expression
+{
+
+	@Override
+	public void interprit(String s) 
+	{
+		int sum;
+		int j=0;
+		int a[]=new int[s.length()];
+		for(int i=0;i<s.length();i++)
+		{
+			if(s.charAt(i)>='0' && s.charAt(i)<='9')
+			{
+				a[j]=Character.getNumericValue(s.charAt(i));
+				j=j+1;
+			}
+			else
+			{
+				for(int i=0;i<a.length;i++)
+				{
+					System.out.println(a[i]);
+				}
+				char ch=s.charAt(i);
+				switch(ch)
+				{
+				case '+':
+					j=j-2;
+					a[j]=a[j]+a[j+1];
+					j=j+1;
+				case '-':
+					j=j-2;
+					a[j]=a[j]+a[j+1];
+					j=j+1;
+				case '*':
+					j=j-2;
+					a[j]=a[j]+a[j+1];
+					j=j+1;
+				case '/':
+					j=j-2;
+					a[j]=a[j]+a[j+1];
+					j=j+1;
+				}
+			}
+			System.out.println(a[j]);
+		}
+	}
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the post fix Expression");
+		String str=sc.next();
+		terminalExpression t=new terminalExpression();
+		t.interprit(str);
+	}
+
+}

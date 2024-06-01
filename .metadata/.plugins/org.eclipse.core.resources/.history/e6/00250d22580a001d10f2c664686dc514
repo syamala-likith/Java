@@ -1,0 +1,29 @@
+package startage_pattern;
+
+public class Shell_Sort implements Sorting_Interface_Main
+{
+//	for(gap=n/2;gap>0;gap=gap/2)
+//	{
+//		for(i=gap;i<n;i++)
+//		{
+//			k=a[i];
+//			j=i-gap;
+//			while(j>=0 && k<a[j])
+//			{
+//				a[j+gap]=a[j];
+//				j=j-gap;
+//			}
+//			a[j+gap]=k;
+//		}
+//		for(m=0;m<n;m++)
+//		printf("%d ",a[m]);
+//		printf("\n");
+//	}
+	@Override
+	public int[] sort(int[] a)
+	{
+		
+		return null;
+	}
+	
+}

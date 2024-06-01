@@ -1,0 +1,33 @@
+package Exmple;
+
+import java.util.Scanner;
+
+public class terminalExpression implements Expression
+{
+
+	@Override
+	public void interprit(String s) 
+	{
+		int a[]=new int[s.length()];
+		for(int i=0;i<s.length();i++)
+		{
+			if(s.charAt(i)>='0' && s.charAt(i)<='9')
+			{
+				a[i]=Character.getNumericValue(s.charAt(i));
+			}
+		}
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println(a[i]);
+		}
+	}
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the post fix Expression");
+		String str=sc.next();
+		terminalExpression t=new terminalExpression();
+		t.interprit(str);
+	}
+
+}
